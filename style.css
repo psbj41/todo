@@ -40,7 +40,7 @@ html, body{
     margin: 10px;
     border: 1px solid black;
     box-shadow: 0 5px 7px -7px rgba(0, 0, 0, 0.75);
-    
+
 }
 
 .header-plus:hover{
@@ -53,4 +53,55 @@ html, body{
     font-size: 30px;
     font-weight: 600;
     color: rgb(0, 0, 0);
+}
+
+.box{
+    background-color: bisque;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}
+
+.box .box-header{
+    padding: 10px;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+.box-header .icons{
+    margin-left: auto;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.box-header .icons div{
+    background-color: red;
+    margin-right: 1px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    box-shadow: 0px 10px 10px -7px rgba(0, 0, 0, 0.75);
+}
+
+.box-header .icons div:hover{
+    background-color: green;
+}
+
+.box-content textarea{
+    padding: 5px;
+    height: 250px;
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+.content{
+    grid-template-columns: repeat(5,1fr);
 }

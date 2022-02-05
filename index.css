@@ -1,11 +1,12 @@
 .header{
-    background-color: rgb(0, 176, 199);
+    background-color: #4484CE;
 }
 
 .content{
-    background-color: rgb(255, 255, 255);
+    background-color: #D9D9D9;
+    display: grid;
 }
 
 .footer{
-    background-color: rgb(114, 51, 0);
+    background-color: #F19F4D;
 }
