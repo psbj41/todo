@@ -15,6 +15,7 @@ body {
     position: absolute;
     grid-template-rows: 50px auto 50px;
     height: 100%;
+    width: 100%;
 }
 
 .header {
@@ -62,7 +63,7 @@ body {
 }
 
 .box {
-    background-color: bisque;
+    background-color: none;
     width: 300px;
     height: 300px;
     margin: 10px;
@@ -145,6 +146,7 @@ body {
 }
 
 .modal-header .close {
+    cursor: pointer;
     margin-left: auto;
     background-color: red;
     padding: 10px;
@@ -152,15 +154,54 @@ body {
 }
 
 .modal-header .close button {
-    border: none;
-    background-color: none;
+    cursor: pointer;
 }
 
 #dialogBox {
-    /* display: none; */
+    display: none;
 }
 
 .label-title{
     font-size: 20px;
     font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.form .modal-title-input{
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form input{
+    border-radius: 5px;
+    width: 95%;
+    border: none;
+    outline: none;
+    padding: 10px;
+
+}
+
+.form textarea{
+    width: 95%;
+    height: 120px;
+}
+
+#submitBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#submitBtn button{
+    background-color: rgba(15, 192, 24, 0.877);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.form .error-message{
+    display: none;
+}
+
