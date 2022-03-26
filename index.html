@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="title-name">Todo App</div>
+        <div class="addbtn" onclick="openModel()">
+            <span class="material-icons">add_circle</span>
+            <button>Add Task</button>
+        </div>
+    </header>
+
+
+    <section id="section">
+    </section>
+
+
+
+    <footer>
+        <div class="title-name">
+            <a href="#">Pratik Jadhav</a>
+        </div>
+    </footer>
+
+    <div class="message">
+        <h4>Kindly Fill All Inputs</h4>
+    </div>
+    <div class="model">
+        <div class="model-title">
+            <div class="title">ADD NEW TODO</div>
+            <div class="cross">
+                <button onclick="closeModel()">X</button>
+            </div>
+        </div>
+        <div class="title-input">
+            <input type="text" placeholder="Title" class="title-input-class">
+        </div>
+        <div class="description">
+            <textarea placeholder="Description" class="description-input-class"></textarea>
+        </div>
+        <div class="submit">
+            <button onclick="addNewTodo()">SUBMIT</button>
+        </div>
+    </div>
+
+
+</body>
+<script src="./script.js"></script>
+
+</html>
