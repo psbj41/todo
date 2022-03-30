@@ -30,6 +30,9 @@ function addNewTodo() {
         <button class="minimizebtn">-</button>
         </div>
         <div class="close">
+        <button class="editbtn">E</button>
+        </div>
+        <div class="close">
         <button class="closebtn">x</button>
         </div>
         </div>
@@ -46,6 +49,11 @@ function addNewTodo() {
     } else {
         message.style.display = "block";
     }
+console.log(title.value);
+    // let titleData = title.value;
+    // let descData = description.value;
+    // localStorage.setItem("title", titleData);
+    // localStorage.setItem("description", descData);
 
     closeTodo();
     minimize();
